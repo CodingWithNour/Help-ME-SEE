@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".directions.Presenter.DirectionsScreenPresenter">
+
+
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="372dp"
+        android:layout_height="419dp"
+        android:background="@drawable/tv_shape"
+        android:hint="Your Location is : "
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/helpBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/help_btn_shape"
+        android:contentDescription="Send message asking for help to friends!"
+        android:drawablePadding="20dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:paddingLeft="85dp"
+        android:paddingRight="70dp"
+        android:text="Send"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="-19dp"
+        tools:layout_editor_absoluteY="662dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/speechBtn_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:drawableStart="@drawable/mic"
+        android:drawableLeft="@drawable/mic"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text=" Press to Talk  Send "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addFriendBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addFriendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:drawableStart="@drawable/add_icn"
+        android:drawableLeft="@drawable/add_icn"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textSize="20sp"
+        android:text="Add Friend to send my Location"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
